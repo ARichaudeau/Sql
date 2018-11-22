@@ -1,0 +1,6 @@
+DROP TABLE qcm;
+CREATE TABLE qcm (question_id int, intitule VARCHAR (200), proposition_1 VARCHAR (200), proposition_2 VARCHAR (200), proposition_3 VARCHAR (200), proposition_4 VARCHAR (200), bonne_reponse VARCHAR (200), reponse_saisie VARCHAR (200));
+INSERT INTO qcm (question_id, intitule, proposition_1, proposition_2, proposition_3, proposition_4, bonne_reponse, reponse_saisie) VALUES (1, "Quelle est la capitale de l'Italie ?", "Rome", "Paris", "Athènes", "Madrid", "Rome", null);
+INSERT INTO qcm (question_id, intitule, proposition_1, proposition_2, proposition_3, proposition_4, bonne_reponse, reponse_saisie) VALUES (2, "Quelle est la capitale de l'Espagne ?", "Rome", "Paris", "Athènes", "Madrid", "Madrid", null);
+SELECT ROWID, question_id, intitule FROM qcm;
+SELECT * FROM qcm;	
